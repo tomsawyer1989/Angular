@@ -7,4 +7,9 @@ import { Component } from "@angular/core";
         'main-page.component.css'
     ]
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+
+    agregar () {
+        console.log('Hey...');
+    }
+}
