@@ -14,12 +14,13 @@ export class DbzService {
             poder: 7500
         }
     ];
-
-    constructor() {
-        console.log('Servicio inicializado');
-    }
-
     get personajes (): Personaje[] {
         return [...this._personajes];
+    }
+
+    constructor() {}
+
+    agregarPersonaje (personaje: Personaje) {
+        this._personajes.push(personaje);
     }
 }
